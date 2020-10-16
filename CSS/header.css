@@ -30,8 +30,8 @@
     height: 35px;
 }
 .big{
+    padding-top: 4px;
     width: 18%;
-    font-weight: bold;
     text-align: center;
 }
 .sect{
