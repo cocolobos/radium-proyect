@@ -1,0 +1,19 @@
+.logo{
+    display: flex;
+    border: 3px solid black;
+    padding:50px;
+    color:green;
+    justify-content: center;
+    
+}
+.bar{
+    display: flex;
+    
+    justify-content: start;
+    padding: 15px;
+    border: 3px solid red;
+}
+.ico{
+    border: 3px solid green;
+    margin-right: 20px;
+}
