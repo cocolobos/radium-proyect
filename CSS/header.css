@@ -1,24 +1,43 @@
 .logo{
     display: flex;
     text-decoration: none;
-    border: 3px solid black;
-    padding:50px;
+    padding:35px;
     font-size: 30px;
-    
+    font-weight: bold;
+    font-family: cursive;
+    background-color: cadetblue;
     justify-content: center;
     
 }
 .txt{
-    color: blue;
+    color: #0f3057;
 }
 .bar{
+    border: 2px solid black;
     display: flex;
-    margin-top: 10px;
-    justify-content: start;
+    background-color: midnightblue;
+    justify-content: space-around;
     padding: 15px;
-    border: 3px solid red;
 }
 .ico{
-    border: 3px solid green;
-    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: darkslategrey;
+    justify-content: space-around;
+}
+#asd{
+    width: 35px;
+    height: 35px;
+}
+.big{
+    width: 18%;
+    font-weight: bold;
+    text-align: center;
+}
+.sect{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
