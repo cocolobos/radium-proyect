@@ -8,6 +8,9 @@ a{
     text-decoration: none;
     color: cadetblue;
 }
+.op:hover{
+    opacity: 0.5;
+}
 h1,h2{
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
