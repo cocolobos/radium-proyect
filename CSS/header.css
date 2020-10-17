@@ -34,8 +34,13 @@
     background-color: #ddd;
     color: black;
 }
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 701px){
     .big{
+        display: none;
+    }
+}
+@media screen and (max-width: 700px){
+    .sect{
         display: none;
     }
 }

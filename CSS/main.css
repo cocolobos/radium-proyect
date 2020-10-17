@@ -1,8 +1,8 @@
 .container{
+    width: 100%;
     background-color: #0f3057;
     flex-direction: column;
     display: flex;
-    padding: 10px;
     justify-content: space-between;
 }
 .divide{
@@ -66,6 +66,25 @@ h1,h2{
     width: 480px;
     padding: 5px;
 }
+.publicity{
+    width: 100%;
+    display: inline-block;
+}
+.not1{
+    width: 100%;
+    text-align: center;
+    background-color: rgb(18,18,18);
+}
+.not2{
+    width: 100%;
+    text-align: center;
+    background-color: rgb(202,0,0);
+}
+.not3{
+    width: 100%;
+    text-align: center;
+    background-color: rgb(255,255,255);
+}
 @media screen and (min-width: 1024px){
     .container{
         width: 100%;
@@ -75,5 +94,3 @@ h1,h2{
         border-right: 1px groove seashell;
     }
 }
-
-
