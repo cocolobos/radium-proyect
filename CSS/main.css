@@ -1,21 +1,12 @@
 .container{
     background-color: #0f3057;
+    flex-direction: column;
     display: flex;
     padding: 10px;
     justify-content: space-between;
 }
-a{
-    text-decoration: none;
-    color: cadetblue;
-}
-.op:hover{
-    opacity: 0.5;
-}
-h1,h2{
-    text-decoration: underline;
-    font-size: 40px;
-    font-family: 'Arial Narrow Bold', sans-serif;
-    font-weight: bold;
+.divide{
+    border:none;
 }
 .new1{    
     margin: 8px;
@@ -23,6 +14,24 @@ h1,h2{
     flex: 2;
     order:2; 
     text-align: center;
+}
+.op:hover{
+    opacity: 0.5;
+}
+a{
+    text-decoration: none;
+    color: cadetblue;
+}
+h1,h2{
+    text-decoration: underline;
+    font-size: 40px;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+}
+.paragraph{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 400;
 }
 .p2{
     padding-top: 30px;
@@ -36,17 +45,6 @@ h1,h2{
     justify-content: space-between;
     text-align: center;
 }
-.new3{
-    border: none;
-    margin: 5px;
-    display: flex;
-    flex: 2;
-    order:2; 
-    text-align: center;
-}
-.divide{
-    border-right: 1px groove seashell;
-}
 .bord{
     padding-top: 10px;
     margin: 5px;
@@ -56,14 +54,26 @@ h1,h2{
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
 }
+.new3{
+    border: none;
+    margin: 5px;
+    display: flex;
+    flex: 2;
+    order:2; 
+    text-align: center;
+}
 .pic{
     width: 480px;
     padding: 5px;
 }
-.paragraph{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
-    font-weight: 400;
+@media screen and (min-width: 1024px){
+    .container{
+        width: 100%;
+        flex-direction: row;
+    }
+    .divide{
+        border-right: 1px groove seashell;
+    }
 }
 
 

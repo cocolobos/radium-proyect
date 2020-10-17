@@ -1,6 +1,5 @@
 .logo{
     display: flex;
-    text-decoration: none;
     padding:35px;
     font-size: 30px;
     font-weight: bold;
@@ -8,36 +7,36 @@
     background-color: cadetblue;
     justify-content: center;
 }
-.txt{
-    color: #0f3057;
-}
-
-.bar{
-    border: 2px solid black;
-    display: flex;
-    background-color: midnightblue;
-    justify-content: space-around;
-    padding: 15px;
-}
 .ico{
     display: flex;
     flex-direction: row;
     background-color: darkslategrey;
     justify-content: space-around;
 }
-#asd{
-    width: 35px;
-    height: 35px;
-}
 .big{
     padding-top: 4px;
     width: 18%;
     text-align: center;
 }
+#ph1{
+    width: 35px;
+    height: 35px;
+}
 .sect{
+    padding-top: 5px;
     width: 100%;
     text-align: center;
     font-size: 30px;
     font-weight: bold;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
+.sect:hover{
+    background-color: #ddd;
+    color: black;
+}
+@media screen and (min-width: 1024px){
+    .big{
+        display: none;
+    }
+}
+
