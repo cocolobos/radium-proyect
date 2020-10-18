@@ -8,12 +8,16 @@
 }
 .conten{
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin: auto;
 }
 .titl{
     width: 70%;
     margin-left: 120px;
     margin-top: 2px;
-    padding-top: 15px;
+    padding-top: 5px;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
@@ -23,17 +27,28 @@
 .pic{
     width: 80%;
     margin-left: 90px;
-    margin-top: 5px;
+    margin-top: 10px;
+}
+.second{
+    width: 66%;  
 }
 .paragraph{
     width: 80%;
     margin-left: 100px;
     text-align: center;
     margin-top: 2px;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     font-size: 25px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #fff;
+    border-bottom: 1px solid darkolivegreen;
+}
+.side{
+    display: flex;
+    width: 60%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
 }
 .little{
     padding-top: 25px;
@@ -58,4 +73,13 @@
     width: 100%;
     text-align: center;
     background-color: rgb(255,255,255);
+}
+@media screen and (max-width: 768px){
+    .conten{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        text-align: center;
+    }
 }
