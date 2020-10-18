@@ -1,70 +1,50 @@
 .container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     width: 100%;
+    margin: auto;
     background-color: #0f3057;
-    flex-direction: column;
-    display: flex;
-    justify-content: space-between;
 }
-.divide{
-    border:none;
-}
-.new1{    
-    margin: 8px;
+.conten{
     display: flex;
-    flex: 2;
-    order:2; 
+}
+section{
+    
+}
+aside{
+    
+}
+.titl{
+    width: 70%;
+    margin-left: 120px;
+    margin-top: 2px;
+    padding-top: 15px;
     text-align: center;
-}
-.op:hover{
-    opacity: 0.5;
-}
-a{
-    text-decoration: none;
-    color: cadetblue;
-}
-h1,h2{
-    text-decoration: underline;
-    font-size: 40px;
-    font-family: 'Arial Narrow Bold', sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
-}
-.paragraph{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
-    font-weight: 400;
-}
-.p2{
-    padding-top: 30px;
-}
-.new2{
-    margin: 5px;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    order:1;
-    justify-content: space-between;
-    text-align: center;
-}
-.bord{
-    padding-top: 10px;
-    margin: 5px;
-}
-.sec{
-    margin: 5px;
-    font-size: 30px;
-    font-family: 'Times New Roman', Times, serif;
-}
-.new3{
-    border: none;
-    margin: 5px;
-    display: flex;
-    flex: 2;
-    order:2; 
-    text-align: center;
+    font-size: 40px;
+    color: #fff;
 }
 .pic{
-    width: 480px;
-    padding: 5px;
+    width: 80%;
+    margin-left: 90px;
+    margin-top: 5px;
+}
+.paragraph{
+    width: 80%;
+    margin-left: 100px;
+    text-align: center;
+    margin-top: 2px;
+    padding-bottom: 5px;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+}
+.little{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid darkolivegreen;
 }
 .publicity{
     width: 100%;
@@ -84,13 +64,4 @@ h1,h2{
     width: 100%;
     text-align: center;
     background-color: rgb(255,255,255);
-}
-@media screen and (min-width: 1024px){
-    .container{
-        width: 100%;
-        flex-direction: row;
-    }
-    .divide{
-        border-right: 1px groove seashell;
-    }
 }

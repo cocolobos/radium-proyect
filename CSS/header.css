@@ -1,47 +1,40 @@
 .logo{
     display: flex;
+    flex-direction: column;
+    text-align: center;
     padding:35px;
     font-size: 30px;
     font-weight: bold;
-    font-family: cursive;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: cadetblue;
-    justify-content: center;
-}
-.ico{
+  }
+  .ico{
     display: flex;
     flex-direction: row;
     background-color: darkslategrey;
     justify-content: space-around;
-}
-.big{
+  }
+  .big{
     padding-top: 4px;
     width: 18%;
     text-align: center;
-}
-#ph1{
+  }
+  #ph1{
     width: 35px;
     height: 35px;
-}
-.sect{
+  }
+  .sect{
     padding-top: 5px;
     width: 100%;
     text-align: center;
+    text-decoration: none;
     font-size: 30px;
     font-weight: bold;
+    color: black;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-}
-.sect:hover{
+  }
+  .sect:hover{
     background-color: #ddd;
     color: black;
-}
-@media screen and (min-width: 701px){
-    .big{
-        display: none;
-    }
-}
-@media screen and (max-width: 700px){
-    .sect{
-        display: none;
-    }
-}
-
+  }
+  
