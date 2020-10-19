@@ -1,141 +1,66 @@
-.container{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 100%;
-    margin: auto;
-    background-color: #0f3057;
-}
 .conten{
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-direction: column;
     width: 100%;
-    margin: auto;
-}
-.titl{
-    width: 70%;
-    margin-left: 120px;
-    margin-top: 2px;
-    padding-top: 5px;
-    text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
-    font-size: 40px;
-    color: #fff;
+    background-color: darkslategray;
+    color:#fff;
 }
-.pic{
-    width: 80%;
-    margin-left: 90px;
-    margin-top: 10px;
-}
-.second{
-    width: 66%;  
-}
-.paragraph{
-    width: 80%;
-    margin-left: 100px;
-    text-align: center;
-    margin-top: 2px;
-    padding-bottom: 10px;
-    font-size: 25px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #fff;
-    border-bottom: 1px solid darkolivegreen;
-}
-.lftside{
+.import{
     display: flex;
-    width: 60%;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
     text-align: center;
 }
 .side{
     display: flex;
-    width: 40%;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
     text-align: center;
-}
-.little{
-    padding-top: 25px;
-    padding-bottom: 25px;
-    border-bottom: 1px solid darkolivegreen;
 }
 .publicity{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     width: 100%;
     justify-content: center;
+    text-align: center; 
 }
-.not1{
-    width: 100%;
-    text-align: center;
-    background-color: rgb(18,18,18);
+.titl{
+    font-weight: bold;
+    font-size: 25px;
 }
-.not2{
-    width: 100%;
-    text-align: center;
-    background-color: rgb(202,0,0);
-}
-.not3{
-    width: 100%;
-    text-align: center;
-    background-color: rgb(255,255,255);
-}
-@media screen and (max-width: 768px){
+@media screen and (min-width: 768px){
     .conten{
         display: flex;
-        flex-direction: column;
-        width: 100%;
+        flex-direction: row;
     }
-    .titl{
-        width: 90%;
-        margin-top: 2px;
-        padding-top: 5px;
-        text-align: center;
-        margin-left:75px;
+    .import{
+        order: 2;
+        width: 45%;
+        padding-right: 15px;
+        padding-left: 15px;
+        border-right: 1px solid darkolivegreen;
     }
-    .paragraph{
-        width: 95%;
-        text-align: center;
-        margin-top: 2px;
-        margin-left:60px;
-        padding-bottom: 10px;
-        font-size: 25px;
-    }
-    .pic{
-        width: 100%;
-        margin-top: 10px;
-        margin-left:55px;
-    }
-    .second{
-        margin-top: 10px;
-        margin-left: 100px;
+    .side{
+        order: 1;
+        width: 25%;
+        padding-top: 60px;
+        padding-right: 5px;
+        padding-left: 5px;
+        height: fit-content;
+        border-right: 1px solid darkolivegreen;
     }
     .little{
-        width: 140%;
-        padding-top: 25px;
-        padding-bottom: 15px;
-        margin-left: 65px;
-        border-bottom: 1px solid darkolivegreen;
+        justify-content: space-around;
+        padding-top: 30px;
     }
-    .not1{
-        width: 100%;
-        text-align: left;
-        background-color: rgb(18,18,18);
-        border: 3px solid black;
-    }
-    .not2{
-        width: 100%;
-        margin-left: 0px;
-        background-color: rgb(202,0,0);
-        border: 3px solid black;
-    }
-    .not3{
-        width: 100%;
-        text-align: left;
-        background-color: rgb(255,255,255);
+    .publicity{
+        order: 3;
+        width: 25%;
+        padding-top: 50px;
+        padding-left: 5px;
+        justify-content: space-between;
     }
 }
