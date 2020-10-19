@@ -43,9 +43,16 @@
     color: #fff;
     border-bottom: 1px solid darkolivegreen;
 }
-.side{
+.lftside{
     display: flex;
     width: 60%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.side{
+    display: flex;
+    width: 40%;
     flex-direction: row;
     flex-wrap: wrap;
     text-align: center;
@@ -56,8 +63,11 @@
     border-bottom: 1px solid darkolivegreen;
 }
 .publicity{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
-    display: inline-block;
+    justify-content: center;
 }
 .not1{
     width: 100%;
@@ -77,9 +87,55 @@
 @media screen and (max-width: 768px){
     .conten{
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
         width: 100%;
+    }
+    .titl{
+        width: 90%;
+        margin-top: 2px;
+        padding-top: 5px;
         text-align: center;
+        margin-left:75px;
+    }
+    .paragraph{
+        width: 95%;
+        text-align: center;
+        margin-top: 2px;
+        margin-left:60px;
+        padding-bottom: 10px;
+        font-size: 25px;
+    }
+    .pic{
+        width: 100%;
+        margin-top: 10px;
+        margin-left:55px;
+    }
+    .second{
+        margin-top: 10px;
+        margin-left: 100px;
+    }
+    .little{
+        width: 140%;
+        padding-top: 25px;
+        padding-bottom: 15px;
+        margin-left: 65px;
+        border-bottom: 1px solid darkolivegreen;
+    }
+    .not1{
+        width: 100%;
+        text-align: left;
+        background-color: rgb(18,18,18);
+        border: 3px solid black;
+    }
+    .not2{
+        width: 100%;
+        margin-left: 0px;
+        background-color: rgb(202,0,0);
+        border: 3px solid black;
+    }
+    .not3{
+        width: 100%;
+        text-align: left;
+        background-color: rgb(255,255,255);
     }
 }

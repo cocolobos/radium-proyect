@@ -1,3 +1,6 @@
+header{
+  width: 100%;
+}
 .logo{
     display: flex;
     flex-direction: column;
@@ -16,8 +19,9 @@
   }
   .big{
     padding-top: 4px;
-    width: 18%;
-    text-align: center;
+    padding-left: 2px;
+    width: 100%;
+    text-align: left;
   }
   #ph1{
     width: 35px;
@@ -38,7 +42,6 @@
     color: black;
   }
   @media screen and (min-width: 700px){
-
     .big{
         display: none;
     }
@@ -46,5 +49,16 @@
   @media screen and (max-width: 701px){
     .sect{
         display: none;
+    }
+    .logo{
+      width: 118%;
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      background-color: cadetblue;
+    }
+    .ico{
+      width: 136%;
     }
   }
