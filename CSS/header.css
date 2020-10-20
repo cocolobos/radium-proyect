@@ -8,9 +8,6 @@
 time{
   padding-bottom: 10px;
 }
-.nvbar{
-  display: none;
-}
 .hamb{
   display: flex;
   width:100%;
@@ -20,6 +17,9 @@ time{
 #menuhamb{
   width: 35px;
   height: 35px;
+}
+.nvbar{
+  display: none;
 }
 @media screen and (min-width: 768px){
   .hamb{

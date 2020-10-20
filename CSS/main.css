@@ -13,6 +13,10 @@
     justify-content: center;
     text-align: center;
 }
+.titl{
+    font-weight: bold;
+    font-size: 25px;
+}
 .pic{
     width: 100%;
 }
@@ -29,10 +33,6 @@
     width: 100%t;
     justify-content: center;
     text-align: center; 
-}
-.titl{
-    font-weight: bold;
-    font-size: 25px;
 }
 @media screen and (min-width: 768px){
     .conten{
@@ -65,5 +65,8 @@
         padding-top: 50px;
         padding-left: 5px;
         justify-content: space-between;
+    }
+    .publ{
+        width: 100%;
     }
 }
