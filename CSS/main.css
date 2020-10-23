@@ -32,7 +32,10 @@
     flex-direction: column;
     width: 100%t;
     justify-content: center;
-    text-align: center; 
+}
+.publ{
+    width: 100%;
+    height: auto;
 }
 @media screen and (min-width: 768px){
     .conten{
