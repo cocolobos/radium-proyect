@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radium Newspaper</title>
+    <link href="./CSS/normalize.css" rel="stylesheet">
+    <link href="./CSS/header.css" rel="stylesheet">
+    <link href="./CSS/main.css" rel="stylesheet">
+    <link href="./CSS/footer.css" rel="stylesheet">
+    <script src="../class-5/JS/main.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <div class="logo">
+                <img id="logopic" src="../class-3/img/logo.png">
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <div class="titles">
+            <h1>Enjoy your membership</h1>
+            <h2>Subscription Form</h2>
+        </div>
+        <div class="subsform">
+            <form class="formulary" id="formulary" action="#">
+                <div class="formulary-group" id="fullname">
+                    <label for="name" class="formulary-label">Full Name:</label>
+                    <input class="formulary-input" type="text" id="name" name="name" placeholder="Insert Full Name" required />
+                    <p class="formulary-error">Must have more than 6 letters and at least one white space</p>
+                </div>
+                <div class="formulary-group" id="e-mail">
+                    <label class="formulary-label" for="email">E-mail:</label>
+                    <input class="formulary-input" type="email" id="email" name="email" placeholder="asd@123.com">
+                    <p class="formulary-error">Must have a valid email format</p>
+                </div>
+                <div class="formulary-group" id="pass">
+                    <label class="formulary-label" for="password">Password:</label>
+                    <input class="formulary-input" type="password" id="password" name="password" placeholder="Insert Password" required/>
+                    <p class="formulary-error">Must have at least 8 characters with letters and numbers</p>
+                </div>
+                <div class="formulary-group" id="year">
+                    <label class="formulary-label" for="age">Age:</label>
+                    <input class="formulary-input" type="number" id="age" name="age" placeholder="Insert your Age" required/>
+                    <p class="formulary-error">Must be over 18 years</p>
+                </div>
+                <div class="formulary-group" id="phnumb">
+                    <label class="formulary-label" for="phone">Phone Number:</label>
+                    <input class="formulary-input" type="number" id="phone" name="phone" placeholder="Insert your phone number" required/>
+                    <p class="formulary-error">Must be a 7 digit number with no spaces</p>
+                </div>
+                <div class="formulary-group" id="direct">
+                    <label class="formulary-label" for="adress">Adress:</label>
+                    <input class="formulary-input" type="text" id="adress" name="adress" placeholder="St Martin 1023">
+                    <p class="formulary-error">Must be at least 5 characters, using letters, numbers and one white space</p>
+                </div>
+                <div class="formulary-group" id="location">
+                    <label class="formulary-label" for="city">City:</label>
+                    <input class="formulary-input" type="text" id="city" name="city" placeholder="Rosario" required/>
+                    <p class="formulary-error">Must have at least 3 characters</p>
+                </div>
+                <div class="formulary-group" id="code">
+                    <label class="formulary-label" for="postcode">Post Code:</label>
+                    <input class="formulary-input" type="number" id="postcode" name="postcode" placeholder="2000" required/>
+                    <p class="formulary-error">Must have at least 3 characters</p>
+                </div>
+                <div class="formulary-group" id="doc">
+                    <label class="formulary-label" for="dni">Doc Numb:</label>
+                    <input class="formulary-input" type="number" id="dni" name="dni" placeholder="Insert your Document Number" required/>
+                    <p class="formulary-error">Must have between 7 or 8 characters</p>
+                </div>
+                <div class="formulary-message" id="mistake">
+                    <p>Error! Please fill the complete formulary</p>
+                </div>
+                <div class="formulary-group formulary-group-btn">
+                    <button type="submit" class="formulary-btn" id="btnsub">Submit</button>
+                    <p class="formulary-message-complete" id="complete-message">Form submit successfully!</p>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>Radium Front News Desing, © Copyright 2020</p>
+    </footer>
+</body>
+</html>

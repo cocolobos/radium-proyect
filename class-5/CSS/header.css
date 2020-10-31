@@ -1,0 +1,11 @@
+.logo{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgb(7,21,32);
+  color: #fff;
+}
+#logopic{
+  width: 100%;
+  height: auto;
+}
