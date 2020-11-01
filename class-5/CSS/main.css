@@ -1,11 +1,3 @@
-.container{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: darkslategray;
-    color:#fff;
-}
 .titles{
     display: flex;
     flex-direction: column;
@@ -14,15 +6,12 @@
     text-align: center;
 }
 body{
-    background-color: teal;
+    background-color:  darkslategray;
 }
-main{
+.column{
     width: 100%;
-    
-}
-.formulary{
     display: flex;
-    flex-direction: column;
+    flex-direction: column
 }
 .formulary-label{
     display: block;
@@ -31,41 +20,12 @@ main{
     margin-bottom: 10px;
     margin-top: 5px;
 }
-.formulary-input{
-    width: 90%;
+input{
+    width: 100%;
+    align-items: center;
     background-color: #fff;
-    border: 3px solid transparent;
-    border-radius: 3px;
     height: 45px;
     line-height: 45px;
-    padding-right: 20px;
-}
-.formulary-input:focus{
-    border: 3px solid #150485;
-}
-.formulary-error{
-    font-size: 15px;
-    font-weight: 600;
-    margin-bottom: 0;
-    display: none;
-    color: #af2d2d
-}
-.formulary-message{
-    display: none;
-    width: 90%;
-    height: 45px;
-    line-height: 45px;
-    background-color: #af2d2d;
-    padding: 0 15px;
-    border-radius: 2px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.formulary-message p {
-    margin: 0;
-}
-.formulary-message-active{
-    display: block;
 }
 .formulary-group-btn{
     display: flex;
@@ -73,6 +33,7 @@ main{
     align-items: center;
 }
 .formulary-btn{
+    display: block;
     height: 45px;
     line-height: 45px;
     width: 30%;
@@ -88,28 +49,34 @@ main{
     background-color: blanchedalmond;
     color: #000;
 }
-.formulary-message-complete{
+#name-error, #email-error, #password-error, #age-error, #phone-error, #adress-error, #city-error, #postcode-error, #dni-error{
     display: none;
     font-size: 15px;
-    color:#150485;
+    font-weight: 600;
+    color: red;
+    text-shadow: 2px 1px black;
 }
-.formulary-message-complete-active{
-    display:block;
-}
-.formulary-group-incorrect .formulary-input{
-    border: 3px solid #af2d2d;
-}
-.formulary-group-correct .formulary-input{
-    border: 3px solid green;
-}
-.formulary-group-incorrect .formulary-error{
-    display: block;
-}
-.formulary-group-correct .formulary-error{
-    display: none;
-}
-.formulary-complete .formulary-message-complete{
-    display: block;
-    font-size: 15px;
-    color:#150485;
+/* RESPONSIVE*/
+@media screen and (min-width: 768px){
+    .formulary{
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin: auto;
+        width: 90%;
+          
+    }
+    .columnfile{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .column{
+        margin: 10px 50px;
+    }
+    .formulary-group-btn{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
 }
