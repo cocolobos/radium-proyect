@@ -338,6 +338,6 @@ window.onload=function(){
     var itemInput = document.querySelector('input[type="text"]');
     itemInput.addEventListener('keyup', runEvent);
     function runEvent(e){
-        document.getElementById('box').innerHTML= "<h3>Hello "+name.value+"</h3>";
+        document.getElementById('box').innerHTML= e.target.value ? "<h3>Hello "+name.value+"</h3>" : "";
     }
 }
