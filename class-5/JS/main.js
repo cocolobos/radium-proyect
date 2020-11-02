@@ -257,61 +257,61 @@ window.onload=function(){
         var errorFields = "";
         var result = true;
         if (!validateName()){
-            errorFields+= "Full Name, ";
+            errorFields+= "Full Name\n";
             name.style.border = "3px solid red";
             nameError.style.display="block";
             result = true;
         }
         if (!validateMail()){
-            errorFields+= "E-Mail, ";
+            errorFields+= "E-Mail\n";
             email.style.border = "3px solid red";
             emailError.style.display="block";
             result = true;
         }
         if (!checkPassword()){
-            errorFields+= "Password, ";
+            errorFields+= "Password\n";
             password.style.border = "3px solid red";
             passError.style.display="block";
             result = true;
         }
         if(!repeatPassword()){
-            errorFields+= "Repeat Password";
+            errorFields+= "Repeat Password\n";
             repeatPass.style.border = "3px solid red";
             repPassError.style.display="block";
             result=true;
         }
         if (!checkAge()){
-            errorFields+= "Age, ";
+            errorFields+= "Age\n";
             age.style.border = "3px solid red";
             ageError.style.display="block";
             result = true;
         }
         if (!checkPhone()){
-            errorFields+= "Phone Number, ";
+            errorFields+= "Phone Number\n";
             phone.style.border = "3px solid red";
             phoneError.style.display="block";
             result = true;
         }
         if (!checkAdress()){
-            errorFields+= "Adress, ";
+            errorFields+= "Adress\n";
             adress.style.border = "3px solid red";
             adressError.style.display="block";
             result = true;
         }
         if (!checkCity()){
-            errorFields+= "City, ";
+            errorFields+= "City\n";
             city.style.border = "3px solid red";
             cityError.style.display="block";
             result = true;
         }
         if (!checkPostNumb()){
-            errorFields+= "Post Number, ";
+            errorFields+= "Post Number\n";
             postcode.style.border = "3px solid red";
             postcodeError.style.display="block";
             result = true;
         }
         if (!checkDocNumb()){
-            errorFields+= "Document Number, ";
+            errorFields+= "Document Number\n";
             dni.style.border = "3px solid red";
             dniError.style.display="block";
             result = true;
@@ -331,7 +331,7 @@ window.onload=function(){
             dni.style.border = "3px solid transparent";
         }
         else if(result){
-            alert("Please check the following fields for possible errors " +errorFields);
+            alert("Please check the following fields for possible errors:\n" +errorFields);
         }
     });
     //BONUS
