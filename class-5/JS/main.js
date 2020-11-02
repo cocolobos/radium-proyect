@@ -2,9 +2,10 @@ window.onload=function(){
 
     //name validation
     var name = document.getElementById('name');
+    var nameError = document.getElementById ('name-error');
     function validateName(){
         var space=name.value.indexOf(" ");
-        if (space<=0 || name.value.length<6){
+        if (space<=0 || name.value.length<6 || name.value == null){
             return false;
         }
         else{
@@ -12,17 +13,17 @@ window.onload=function(){
         }
     }
     name.onblur = function(){
-        if (validateName(event.target.value)){
-            document.getElementById('name').style.border = "3px solid green";
-            document.getElementById('name-error').style.display="none";
+        if (validateName(name.value)){
+            name.style.border = "3px solid green";
+            nameError.style.display="none";
         } else {
-            document.getElementById('name').style.border = "3px solid red";
-            document.getElementById('name-error').style.display="block";
+            name.style.border = "3px solid red";
+            nameError.style.display="block";
         }
     }
     name.onfocus = function(){
-        document.getElementById('name-error').style.display = "none";
-        document.getElementById('name').style.border = "3px solid blue";
+        nameError.style.display = "none";
+        name.style.border = "3px solid blue";
 
     }
     //email validation
@@ -37,17 +38,17 @@ window.onload=function(){
         }
     }
     email.onblur = function(){
-        if (validateMail(event.target.value)){
-            document.getElementById('email').style.border = "3px solid green";
+        if (validateMail(email.value)){
+            email.style.border = "3px solid green";
             document.getElementById('email-error').style.display="none";
         } else {
-            document.getElementById('email').style.border = "3px solid red";
+            email.style.border = "3px solid red";
             document.getElementById('email-error').style.display="block";
         }
     }
     email.onfocus = function(){
         document.getElementById('email-error').style.display = "none";
-        document.getElementById('email').style.border = "3px solid blue";
+        email.style.border = "3px solid blue";
     }
     //password validation
     var password=document.getElementById('password');
@@ -63,17 +64,17 @@ window.onload=function(){
         }
     }
     password.onblur = function(){
-        if (checkPassword(event.target.value)){
-            document.getElementById('password').style.border = "3px solid green";
+        if (checkPassword(password.value)){
+            password.style.border = "3px solid green";
             document.getElementById('password-error').style.display="none";
         } else {
-            document.getElementById('password').style.border = "3px solid red";
+            password.style.border = "3px solid red";
             document.getElementById('password-error').style.display="block";
         }
     }
     password.onfocus = function(){
         document.getElementById('password-error').style.display = "none";
-        document.getElementById('password').style.border = "3px solid blue";
+        password.style.border = "3px solid blue";
     }
     //Age validation
     var age=document.getElementById('age');
@@ -86,17 +87,17 @@ window.onload=function(){
         }
     }
     age.onblur = function(){
-        if (checkAge(event.target.value)){
-            document.getElementById('age').style.border = "3px solid green";
+        if (checkAge(age.value)){
+            age.style.border = "3px solid green";
             document.getElementById('age-error').style.display="none";
         } else {
-            document.getElementById('age').style.border = "3px solid red";
+            age.style.border = "3px solid red";
             document.getElementById('age-error').style.display="block";
         }
     }
     age.onfocus = function(){
         document.getElementById('age-error').style.display = "none";
-        document.getElementById('age').style.border = "3px solid blue";
+        age.style.border = "3px solid blue";
     }
     //Phone Number validation
     var phone=document.getElementById('phone');
@@ -110,17 +111,17 @@ window.onload=function(){
         }
     }
     phone.onblur = function(){
-        if (checkPhone(event.target.value)){
-            document.getElementById('phone').style.border = "3px solid green";
+        if (checkPhone(phone.value)){
+            phone.style.border = "3px solid green";
             document.getElementById('phone-error').style.display="none";
         } else {
-            document.getElementById('phone').style.border = "3px solid red";
+            phone.style.border = "3px solid red";
             document.getElementById('phone-error').style.display="block";
         }
     }
     phone.onfocus = function(){
         document.getElementById('phone-error').style.display = "none";
-        document.getElementById('phone').style.border = "3px solid blue";
+        phone.style.border = "3px solid blue";
     }
     //adress validation
     var adress=document.getElementById('adress');
@@ -128,7 +129,7 @@ window.onload=function(){
         var adds= /^.{4,12}$/;
         var space=adress.value.indexOf(" ");
         if(adress.value.match(adds)){
-            if(adress.value.length>=5 || space > 0){
+            if(adress.value.length>=5 && space > 0){
                 return true;
             }
         }
@@ -137,22 +138,22 @@ window.onload=function(){
         }
     }
     adress.onblur = function(){
-        if (checkAdress(event.target.value)){
-            document.getElementById('adress').style.border = "3px solid green";
+        if (checkAdress(adress.value)){
+            adress.style.border = "3px solid green";
             document.getElementById('adress-error').style.display="none";
         } else {
-            document.getElementById('adress').style.border = "3px solid red";
+            adress.style.border = "3px solid red";
             document.getElementById('adress-error').style.display="block";
         }
     }
     adress.onfocus = function(){
         document.getElementById('adress-error').style.display = "none";
-        document.getElementById('adress').style.border = "3px solid blue";
+        adress.style.border = "3px solid blue";
     }
     //city validation
     var city=document.getElementById('city');
-    function checkCity(cityValue){
-        if(cityValue && cityValue.length>=3){
+    function checkCity(){
+        if(city.value.length>=3){
             return true;
         }
         else{
@@ -160,22 +161,22 @@ window.onload=function(){
         }
     }
     city.onblur = function(){
-        if (checkCity(event.target.value)){
-            document.getElementById('city').style.border = "3px solid green";
+        if (checkCity(city.value)){
+            city.style.border = "3px solid green";
             document.getElementById('city-error').style.display="none";
         } else {
-            document.getElementById('city').style.border = "3px solid red";
+            city.style.border = "3px solid red";
             document.getElementById('city-error').style.display="block";
         }
     }
     city.onfocus = function(){
         document.getElementById('city-error').style.display = "none";
-        document.getElementById('city').style.border = "3px solid blue";
+        city.style.border = "3px solid blue";
     }
     //Post Code Number validation
     var postcode=document.getElementById('postcode');
-    function checkPostNumb(postcode){
-        if (postcode && postcode.length>=3){
+    function checkPostNumb(){
+        if (postcode.value.length>=3){
             return true;
         }
         else{
@@ -183,22 +184,22 @@ window.onload=function(){
         }
     }
     postcode.onblur = function(){
-        if (checkPostNumb(event.target.value)){
-            document.getElementById('postcode').style.border = "3px solid green";
+        if (checkPostNumb(postcode.value)){
+            postcode.style.border = "3px solid green";
             document.getElementById('postcode-error').style.display="none";
         } else {
-            document.getElementById('postcode').style.border = "3px solid red";
+            postcode.style.border = "3px solid red";
             document.getElementById('postcode-error').style.display="block";
         }
     }
     postcode.onfocus = function(){
         document.getElementById('postcode-error').style.display = "none";
-        document.getElementById('postcode').style.border = "3px solid blue";
+        postcode.style.border = "3px solid blue";
     }
-    //city validation
+    //dni validation
     var dni=document.getElementById('dni');
-    function checkDocNumb(dni){
-        if (dni.length>6 && dni.length<9){
+    function checkDocNumb(){
+        if (dni.value.length>6 && dni.value.length<9){
             return true;
         }
         else{
@@ -206,28 +207,71 @@ window.onload=function(){
         }
     }
     dni.onblur = function(){
-        if (checkDocNumb(event.target.value)){
-            document.getElementById('dni').style.border = "3px solid green";
+        if (checkDocNumb(dni.value)){
+            dni.style.border = "3px solid green";
             document.getElementById('dni-error').style.display="none";
         } else {
-            document.getElementById('dni').style.border = "3px solid red";
+            dni.style.border = "3px solid red";
             document.getElementById('dni-error').style.display="block";
         }
     }
     dni.onfocus = function(){
         document.getElementById('dni-error').style.display = "none";
-        document.getElementById('dni').style.border = "3px solid blue";
+        dni.style.border = "3px solid blue";
     }
     //Button
     var form=document.getElementById('formulary');
     form.addEventListener('submit',function(e){
         e.preventDefault();
-        if(validateName(name.value) && validateMail(email.value) && checkPassword(password.value) && checkAge(age.value) && checkPhone(phone.value) && checkAdress(adress.value) && checkCity(city.value) && checkPostNumb(postcode.value) && checkDocNumb(dni.value)){
-            alert("Full Name: "+name.value+", E-mail: "+email.value+", Password: "+password.value+", Age: "+age.value+", Phone Number: "+phone.value+", Adress: "+adress.value+", City: "+city.value+", Post Number: "+postcode.value+", Document Number: "+dni.value);
-            form.reset(); 
+        var errorFields = "";
+        var result = true;
+        if (!validateName()){
+            errorFields+= "Full Name, ";
+            result = true;
         }
-        else{
-            alert("Please check some fields contains errors");
+        if (!validateMail()){
+            errorFields+= "E-Mail, ";
+            result = true;
+        }
+        if (!checkPassword()){
+            errorFields+= "Password, ";
+            result = true;
+        }
+        if (!checkAge()){
+            errorFields+= "Age, ";
+            result = true;
+        }
+        if (!checkPhone()){
+            errorFields+= "Phone Number, ";
+            result = true;
+        }
+        if (!checkCity()){
+            errorFields+= "City, ";
+            result = true;
+        }
+        if (!checkPostNumb()){
+            errorFields+= "Post Number, ";
+            result = true;
+        }
+        if (!checkDocNumb()){
+            errorFields+= "Document Number, ";
+            result = true;
+        }
+        if(validateName(name.value) && validateMail(email.value) && checkPassword(password.value) && checkAge(age.value) && checkPhone(phone.value) && checkAdress(adress.value) && checkCity(city.value) && checkPostNumb(postcode.value) && checkDocNumb(dni.value)){
+            alert("Full Name: "+name.value+"\n E-mail: "+email.value+"\n Password: "+password.value+"\n Age: "+age.value+"\n Phone Number: "+phone.value+"\n Adress: "+adress.value+"\n City: "+city.value+"\n Post Number: "+postcode.value+"\n Document Number: "+dni.value);
+            form.reset();
+            name.style.border = "3px solid transparent";
+            email.style.border = "3px solid transparent";
+            password.style.border = "3px solid transparent";
+            age.style.border = "3px solid transparent";
+            phone.style.border = "3px solid transparent";
+            adress.style.border = "3px solid transparent";
+            city.style.border = "3px solid transparent";
+            postcode.style.border = "3px solid transparent";
+            dni.style.border = "3px solid transparent";
+        }
+        else if(result){
+            alert("Please check the following fields for possible errors " +errorFields);
         }
     }); 
 }
