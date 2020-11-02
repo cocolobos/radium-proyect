@@ -333,5 +333,11 @@ window.onload=function(){
         else if(result){
             alert("Please check the following fields for possible errors " +errorFields);
         }
-    }); 
+    });
+    //BONUS
+    var itemInput = document.querySelector('input[type="text"]');
+    itemInput.addEventListener('keydown', runEvent);
+    function runEvent(e){
+        document.getElementById('box').innerHTML= "<h3>Hello "+e.target.value+"</h3>";
+    }
 }
