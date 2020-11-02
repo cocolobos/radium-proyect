@@ -336,8 +336,8 @@ window.onload=function(){
     });
     //BONUS
     var itemInput = document.querySelector('input[type="text"]');
-    itemInput.addEventListener('keydown', runEvent);
+    itemInput.addEventListener('keyup', runEvent);
     function runEvent(e){
-        document.getElementById('box').innerHTML= "<h3>Hello "+e.target.value+"</h3>";
+        document.getElementById('box').innerHTML= "<h3>Hello "+name.value+"</h3>";
     }
 }
