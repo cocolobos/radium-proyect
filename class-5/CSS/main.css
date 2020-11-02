@@ -49,7 +49,7 @@ input{
     background-color: blanchedalmond;
     color: #000;
 }
-#name-error, #email-error, #password-error, #age-error, #phone-error, #adress-error, #city-error, #postcode-error, #dni-erro, #repassword-error{
+#name-error, #email-error, #password-error, #age-error, #phone-error, #adress-error, #city-error, #postcode-error, #dni-error, #repassword-error{
     display: none;
     font-size: 15px;
     font-weight: 600;
