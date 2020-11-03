@@ -54,7 +54,7 @@ window.onload=function(){
     var password=document.getElementById('password');
     var passError=document.getElementById('password-error');
     function checkPassword(){
-        var passw= /^.{4,12}$/;
+        var passw= /^(?=.*[0-9]).{4,12}$/;
         if(password.value.match(passw)){
             if(password.value.length>=8){
                 return true;
