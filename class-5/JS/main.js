@@ -54,7 +54,7 @@ window.onload=function(){
     var password=document.getElementById('password');
     var passError=document.getElementById('password-error');
     function checkPassword(){
-        var passw= /^(?=.*[0-9]).{4,12}$/;
+        var passw= /^(?=.*[0-9]).{8,}$/;
         if(password.value.match(passw)){
             if(password.value.length>=8){
                 return true;
@@ -105,7 +105,7 @@ window.onload=function(){
     var age=document.getElementById('age');
     var ageError=document.getElementById('age-error');
     function checkAge(){
-        if (age.value>=18){
+        if (age.value>=18 && age.value % 1 === 0){
             return true;
         }
         else{
